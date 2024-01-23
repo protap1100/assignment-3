@@ -7,7 +7,7 @@
     <!-- Daisy and Tailwind cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome Cdn -->\
+    <!-- Font Awesome Cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,6 +17,9 @@
     <style>
         .font-manrope{
             font-family: 'Manrope', sans-serif;
+        }
+        .max-w-custom{
+            max-width: 1000px;
         }
     </style>
     <!-- Tailwind Script -->
@@ -51,7 +54,7 @@
                   <li><a>Contact</a></li>
                 </ul>
               </div>
-              <a class="text-4xl font-extrabold">Hockey<span class="text-red-700">'</span>s</a>
+              <a class="text-4xl font-extrabold" href="#">Hockey<span class="text-red-700">'</span>s</a>
             </div>
             <div class="navbar-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
@@ -63,17 +66,233 @@
               </ul>
             </div>
             <div class="navbar-end space-x-5">
-                <i class="fa-solid fa-magnifying-glass "></i>
+                <a class="hidden lg:block" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
               <a class="btn btn-primary bg-red-500 border-none text-xl font-bold">Get Ticket</a>
             </div>
           </div>
         <!-- nav section ended -->
+
+        <!-- banner section started -->
+        <div class="carousel w-full mt-14">
+            <div id="slide1" class="carousel-item lg:relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div> 
+              <!-- <div class="absolute grid justify-center bg-[#131318] text-center p-3 lg:text-left lg:p-8 rounded-2xl lg:bottom-8 lg:right-8 bottom-0">
+                <h1 class="text-2xl text-white font-extrabold">Meet all the heroes from the field</h1>
+                <p class="font-bold text-sm text-white  mt-4">Dit amet consectetur. Condimentum dignissim adipiscing aliquam  <br>turpis placerat dolor. Purus urna in sit nullam proin. </p>
+              </div> -->
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/slider (1).jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="Images/slider-2.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="Images/slider-3.jpg" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+        <!-- banner section ended -->
     </header>
     <!-- Header section Ended -->
 
     <!-- Main section Started -->
     <main>
+        <!-- Hockey Club Section started -->
+        <section class="container mx-auto">
+            <!-- Border dot -->
+            <div class="border-dashed border mt-32 border-[#13131833]"></div>
+            <!-- content -->
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold mt-8">Professional Hockeys Club</h1>
+                <p class="mt-6 lg:px-[370px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <!-- border dot -->
+            <div class="border-dashed border mt-8 border-[#13131833]"></div>
+            <!-- Progress bar section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-24">
+                <div class="text-center">
+                    <div class="radial-progress text-[#ff4240]" style="--value:87; --size:10rem; --thickness: 14px; transform: rotate(120deg);"  role="progressbar"><p class="text-3xl font-bold" style="transform: rotate(240deg);">87%</p>
+                    </div>
+                    <h1 class=" text-xl mt-6 font-semibold">Player Facility</h1>
+                    <p class="mt-4">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress text-[#49d293]" style="--value:95; --size:10rem; --thickness: 14px; transform: rotate(120deg);"  role="progressbar"><p class="text-3xl font-bold" style="transform: rotate(240deg);">95%</p>
+                    </div>
+                    <h1 class="mt-6  text-xl font-semibold">Player Facility</h1>
+                    <p class="mt-4">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress text-[#ffb546]" style="--value:90; --size:10rem; --thickness: 14px; transform: rotate(120deg);"  role="progressbar"><p class="text-3xl font-bold" style="transform: rotate(240deg);">90%</p>
+                    </div>
+                    <h1 class="mt-6 text-xl font-semibold">Player Facility</h1>
+                    <p class="mt-4">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div class="text-center">
+                    <div class="radial-progress text-[#4c8df1]" style="--value:80; --size:10rem; --thickness: 14px; transform: rotate(120deg);"  role="progressbar"><p class="text-3xl font-bold" style="transform: rotate(240deg);">80%</p>
+                    </div>
+                    <h1 class=" mt-6 text-xl font-semibold">Player Facility</h1>
+                    <p class="mt-4">Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+            </div>
+        </section>
+        <!-- Hockey Club Section Ended -->
+        <!-- Program Section Started -->
+        <section class="container mx-auto">   
+            <div class="border-dashed border mt-24 border-[#13131833]"></div>
+            <div class="text-center sm:px-4">
+                <h1 class="text-4xl font-extrabold mt-8">Program Section</h1>
+                <p class="mt-6 lg:px-[370px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <!-- Program Image Section -->
+            <div>
 
+            </div>
+        </section>  
+        <!-- Program Section Ended -->
+
+        <!-- Product Section Started-->
+        <section class="container mx-auto">
+           <!-- Border dot -->
+           <div class="border-dashed border mt-32 border-[#13131833]"></div>
+           <!-- content -->
+           <div class="text-center">
+               <h1 class="text-4xl font-extrabold mt-8">Our New Product</h1>
+               <p class="mt-6 lg:px-[370px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+           </div>
+           <!-- border dot -->
+           <div class="border-dashed border mt-8 border-[#13131833]"></div>
+           <!-- Poduct List Section -->
+           <div class="grid grid-cols-1 lg:grid-cols-2 mt-12 gap-10 sm:justify-center">
+            <!-- Card 1 -->
+            <div class="border border-solid border-[#1313181A] rounded-2xl overflow-hidden">
+                <div class="grid lg:grid-cols-12  p-4 lg:px-5 lg:py-6">
+                    <!-- Image on the left for small screens -->
+                    <div class="col-span-12 lg:col-span-4 mb-4 lg:mb-0">
+                        <figure>
+                            <img src="Images/5.png" alt="Movie" class="w-full h-full object-cover">
+                        </figure>
+                    </div>
+                    <!-- Content on the right -->
+                    <div class="col-span-12 lg:col-span-8 ml-5 space-y-2">
+                        <div class="flex gap-10 mb-4">
+                            <h1><i class="fa-solid fa-star text-amber-500 mr-2"></i> 5.0</h1>
+                            <h1><i class="fa-solid fa-eye mr-2"></i> 20</h1>
+                            <h1><i class="fa-regular fa-heart mr-2"></i> 200</h1>
+                        </div>
+                        <h1 class="text-xl font-extrabold mb-6">Winter Sports Jersey</h1>
+                        <p class="mb-6">Dolor sit amet consectetur. Ut urna diam quis sagittis.</p>
+                        <div class="lg:flex gap-8 space-y-3">
+                            <h1 class="font-extrabold text-red-700">Price - $22.00</h1>
+                            <h1><i class="fa-solid fa-cart-shopping mr-2"></i>Delivery Fee: Free</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </section>
+        <!-- Product Section Ended-->
+        <section class="container mx-auto">
+            <div class="border-dashed border mt-32 border-[#13131833]"></div>
+            <!-- content -->
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold mt-8">Client Question</h1>
+                <p class="mt-6 lg:px-[370px]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+            <!-- border dot -->
+            <div class="border-dashed border mt-8 border-[#13131833]"></div>
+
+            <div class="lg:flex border border-solid border-[#1313181A] rounded-2xl mt-12 p-8 lg:space-y-0 space-y-8 gap-10">
+                <div class="lg:flex-grow-0 ">
+                    <img src="Images/11.png" alt="">
+                </div>
+                <div class="lg:flex-grow">
+                      <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-6" checked="checked" /> 
+                        <div class="collapse-title md:w-auto w-auto max-width  text-xl font-bold">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content md:w-auto w-auto max-width "> 
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-6" checked="checked" /> 
+                        <div class="collapse-title md:w-auto w-auto max-width  text-xl font-bold">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content md:w-auto w-auto max-width "> 
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-6" checked="checked" /> 
+                        <div class="collapse-title md:w-auto w-auto max-width  text-xl font-bold">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content md:w-auto w-auto max-width "> 
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-6" checked="checked" /> 
+                        <div class="collapse-title md:w-auto w-auto max-width  text-xl font-bold">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content md:w-auto w-auto max-width "> 
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-6" checked="checked" /> 
+                        <div class="collapse-title md:w-auto w-auto max-width  text-xl font-bold">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content md:w-auto w-auto max-width "> 
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-6" checked="checked" /> 
+                        <div class="collapse-title md:w-auto w-auto max-width  text-xl font-bold">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content md:w-auto w-auto max-width "> 
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                        </div>
+                      </div>
+                      <div class="collapse collapse-plus bg-base-200">
+                        <input type="radio" name="my-accordion-6" checked="checked" /> 
+                        <div class="collapse-title md:w-auto w-auto max-width  text-xl font-bold">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content md:w-auto w-auto max-width "> 
+                          <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+
+        </section>
+        
     </main>
     <!-- Main section Ended -->
 
